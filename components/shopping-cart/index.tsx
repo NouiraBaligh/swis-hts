@@ -30,6 +30,7 @@ const ShoppingCart = () => {
                 <tr>
                   <th style={{textAlign: 'left'}}>Product</th>
                   <th></th>
+                  <th></th>
                   <th>quantity</th>
                   <th>Price</th>
                   <th></th>
