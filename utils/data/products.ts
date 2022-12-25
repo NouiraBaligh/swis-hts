@@ -294,12 +294,8 @@ export const products = [
     id: '6',
     name: 'Create an Android & IOS ecommerce mobile application',
     price: 89.99,
-    quantityAvailable: 2, 
-    category: 'T-shirt',
-    currentPrice: 119.99,
-    sizes: ['xl', 'l'], 
-    colors: ['#000', '6F3E18', '#D4BE8D', '#FFF'],
-    images: [
+   currentPrice: 119.99,
+   images: [
       '/images/products/product-6.jpg',
     ],
     punctuation: {
