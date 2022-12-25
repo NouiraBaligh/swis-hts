@@ -6,7 +6,7 @@ export const products = [
     discount: 30,
     quantityAvailable: 2,
    
-    currentPrice: 140.99,
+    currentPrice: 119.99,
   
     images: [
       '/images/products/product-1.jpg',
@@ -64,7 +64,7 @@ export const products = [
     price: 89.99,
     quantityAvailable: 2,
 
-    currentPrice: 150.99,
+    currentPrice: 89.99,
 
     images: [
       '/images/products/product-2.jpg',
@@ -296,7 +296,7 @@ export const products = [
     price: 89.99,
     quantityAvailable: 2, 
     category: 'T-shirt',
-    currentPrice: 89.99,
+    currentPrice: 119.99,
     sizes: ['xl', 'l'], 
     colors: ['#000', '6F3E18', '#D4BE8D', '#FFF'],
     images: [
