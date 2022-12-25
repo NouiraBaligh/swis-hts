@@ -19,7 +19,7 @@ const ShoppingCart = () => {
     <section className="cart">
       <div className="container">
         <div className="cart__intro">
-          <h3 className="cart__title">Shopping Cart</h3>
+          <h3 className="cart__title"> Cart</h3>
           <CheckoutStatus step="cart" />
         </div>
 
@@ -28,7 +28,7 @@ const ShoppingCart = () => {
             <table>
               <tbody>
                 <tr>
-                  <th style={{textAlign: 'left'}}>Product</th>
+                  <th style={{textAlign: 'left'}}>Services</th>
                   <th></th>
                   <th></th>
                   <th>Quantity</th>
