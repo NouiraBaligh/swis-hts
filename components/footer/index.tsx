@@ -28,7 +28,7 @@ const Footer = () => {
            
             <ul>
               <li>Contact</li>
-              <li><a href="#">RUE DE MOILEBEAU 55, GENEVE</a></li>
+              <li><a href="#">27 Old Gloucester Street,London,United Kingdom,WC1N 3AX</a></li>
               <li><a href="#">swiss.h.t.s@gmail.com</a></li>
               <li><a href="#">Hotline: +33612701839</a></li>
             </ul>
