@@ -2,7 +2,7 @@ export const products = [
   {
     id: '1',
     name: 'Create an Android/IOS mobile app in Flutter ',
-    price: 89.99,
+    price: 450.99,
     discount: 30,
     quantityAvailable: 2,
    
@@ -64,7 +64,7 @@ export const products = [
     price: 89.99,
     quantityAvailable: 2,
 
-    currentPrice: 89.99,
+    currentPrice: 455,
 
     images: [
       '/images/products/product-2.jpg',
@@ -180,7 +180,7 @@ export const products = [
     price: 89.99,
     quantityAvailable: 2,
     
-    currentPrice: 89.99,
+    currentPrice: 450,
     
     images: [
       '/images/products/product-4.jpg',
@@ -238,7 +238,7 @@ export const products = [
     price: 89.99,
    
     category: 'T-shirt',
-    currentPrice: 89.99,
+    currentPrice: 190.99,
    
     images: [
       '/images/products/product-5.jpg',
