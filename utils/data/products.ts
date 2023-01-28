@@ -407,7 +407,7 @@ export const products = [
       '/images/products/332232.webp',
     ],
     punctuation: {
-      countOpinions: 81,
+      countOpinions: 82,
       punctuation: 4.5,
       votes: [
         {
