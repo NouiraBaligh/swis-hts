@@ -39,9 +39,9 @@ const ProductItem = ({ discount, images, id, name, price, currentPrice }: Produc
         <div className={"product__price " + (discount ? 'product__price--discount' : '')} >
           <h4>${ currentPrice }</h4>
 
-          {discount &&  
+          {/* {discount &&  
             <span>${ price }</span>
-          }
+          } */}
         </div>
       </div>
     </div>
