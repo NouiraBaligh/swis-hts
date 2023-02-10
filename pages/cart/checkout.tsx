@@ -2,6 +2,7 @@ import Layout from '../../layouts/Main';
 import { useSelector } from 'react-redux';
 import CheckoutStatus from '../../components/checkout-status';
 import CheckoutItems from '../../components/checkout/items';
+import { PayPalScriptProvider,PayPalButtons } from '@paypal/react-paypal-js';
 import { RootState } from 'store';
 
 const CheckoutPage = () => {
@@ -15,10 +16,11 @@ const CheckoutPage = () => {
 
     return totalPrice;
   })
-
+ 
+ 
   return (
     <Layout>
-      <section className="cart">
+         <section className="cart">
         <div className="container">
           <div className="cart__intro">
             <h3 className="cart__title">Shipping and Payment</h3>
@@ -88,48 +90,28 @@ const CheckoutPage = () => {
               <div className="block">
                 <h3 className="block__title">Payment method</h3>
                 <ul className="round-options round-options--three">
-                  <li className="round-item">
-                    <img src="/images/logos/paypal.png" alt="Paypal" />
-                  </li>
-                  <li className="round-item">
-                    <img src="/images/logos/visa.png" alt="Paypal" />
-                  </li>
-                  <li className="round-item">
-                    <img src="/images/logos/mastercard.png" alt="Paypal" />
-                  </li>
-                  <li className="round-item">
-                    <img src="/images/logos/maestro.png" alt="Paypal" />
-                  </li>
-                  <li className="round-item">
-                    <img src="/images/logos/discover.png" alt="Paypal" />
-                  </li>
-                  <li className="round-item">
-                    <img src="/images/logos/ideal-logo.svg" alt="Paypal" />
-                  </li>
+                <PayPalScriptProvider options={{"client-id":"AZqoesjbE7XnmdZ_wQlmmFgxmwa7bNbGDS2YbmEjncjX0oMlOxCb-KpWBtLPZTLxQWbOA0M7AzoiWCmq"}}>
+                <PayPalButtons createOrder={(data,actions)=>{
+                  return actions.order.create({
+                    purchase_units:[
+                      {amount:{
+                        value:"100.99",
+                      },
+                    },
+                    ],
+                  });
+                }}
+                //  onApprove={(data,actions)=>{
+                //   return actions.order?.capture().then(function(details){
+                //     alert("transaction completed " +details.payer.name?.given_name);
+                //   });
+                // }}
+                ></PayPalButtons>
+                  </PayPalScriptProvider> 
+                
                 </ul>
               </div>
-              
-              <div className="block">
-                <h3 className="block__title">Delivery method</h3>
-                <ul className="round-options round-options--two">
-                  <li className="round-item round-item--bg">
-                    <img src="/images/logos/inpost.svg" alt="Paypal" />
-                    <p>$20.00</p>
-                  </li>
-                  <li className="round-item round-item--bg">
-                    <img src="/images/logos/dpd.svg" alt="Paypal" />
-                    <p>$12.00</p>
-                  </li>
-                  <li className="round-item round-item--bg">
-                    <img src="/images/logos/dhl.svg" alt="Paypal" />
-                    <p>$15.00</p>
-                  </li>
-                  <li className="round-item round-item--bg">
-                    <img src="/images/logos/maestro.png" alt="Paypal" />
-                    <p>$10.00</p>
-                  </li>
-                </ul>
-              </div>
+            
             </div>
             
             <div className="checkout__col-2">
@@ -148,13 +130,16 @@ const CheckoutPage = () => {
           <div className="cart-actions cart-actions--checkout">
             <a href="/cart" className="cart__btn-back"><i className="icon-left"></i> Back</a>
             <div className="cart-actions__items-wrapper">
-              <button type="button" className="btn btn--rounded btn--border">Continue shopping</button>
-              <button type="button" className="btn btn--rounded btn--yellow">Proceed to payment</button>
+              {/* <button type="button" className="btn btn--rounded btn--border">Continue shopping</button>
+              <button type="button" className="btn btn--rounded btn--yellow">Proceed to payment</button>  
+                        */}
             </div>
           </div>
         </div>
       </section>
+    
     </Layout>
+    
   )
 };
 
