@@ -95,7 +95,7 @@ const CheckoutPage = () => {
                   return actions.order.create({
                     purchase_units:[
                       {amount:{
-                        value:"priceTotal",
+                        value:"100.99",
                       },
                     },
                     ],
