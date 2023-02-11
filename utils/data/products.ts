@@ -292,13 +292,38 @@ export const products = [
   },
   {
     id: '6',
-    name: 'Create an Android & IOS ecommerce mobile applicationn',
-    price: 4545,
-   currentPrice: 4553,
+    name: 'Create an Android & IOS ecommerce mobile application',
+    price: 455,
+   currentPrice: 455,
    images: [
       '/images/products/product-6.jpg',
     ],
-   
+    punctuation: {
+      countOpinions: 81,
+      punctuation: 4.5,
+      votes: [
+        {
+          value: 1,
+          count: 1
+        },
+        {
+          value: 2,
+          count: 10
+        },
+        {
+          value: 3,
+          count: 10
+        },
+        {
+          value: 4,
+          count: 20
+        },
+        {
+          value: 5,
+          count: 40
+        },
+      ]
+    },
     reviews: [
       {
         name: 'William ',
