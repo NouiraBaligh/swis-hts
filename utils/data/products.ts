@@ -161,13 +161,13 @@ export const products = [
         punctuation: 2
       },
       {
-        name: '   Madison',
+        name: 'Madison',
         avatar: '/images/443.png',
         description: '<p>Besides that, they also add some newly designed skins and ready-made pages, expanding the capabilities available for users.</p>',
         punctuation: 4
       },
       {
-        name: '     Isabella ',
+        name: 'Isabella ',
         avatar: '/images/213.jpeg',
         description: '<p>A new update comes every month, so using theme you could be sure that it is the best possible solution.</p>',
         punctuation: 5
