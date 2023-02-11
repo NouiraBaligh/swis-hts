@@ -55,12 +55,12 @@ const Content = ({ product }: ProductContent) => {
         <span className="product-on-sale">Sale</span>
         {/* <h2 className="product__name">{product.name}</h2> */}
 
-        {/* <div className="product__prices">
+        <div className="product__prices">
           <h4>${ product.currentPrice }</h4>
           {product.discount &&
             <span>${ product.price }</span>
           }
-        </div> */}
+        </div>
       </div>
 
       <div className="product-content__filters">
