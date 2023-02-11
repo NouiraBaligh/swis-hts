@@ -5,7 +5,7 @@ import { toggleFavProduct } from 'store/reducers/user';
 import { RootState } from 'store';
 import { ProductTypeList } from 'types';
 
-const ProductItem = ({ discount, images, id, name, price }: ProductTypeList) => {
+const ProductItem = ({ discount, images, id, name, price, currentPrice }: ProductTypeList) => {
   const dispatch = useDispatch();
   const { favProducts } = useSelector((state: RootState) => state.user);
 
@@ -37,7 +37,7 @@ const ProductItem = ({ discount, images, id, name, price }: ProductTypeList) => 
       <div className="product__description">
         <h3>{name}</h3>
         <div className={"product__price " + (discount ? 'product__price--discount' : '')} >
-          <h4>${ price }</h4>
+          <h4>${ currentPrice }</h4>
 
           {discount &&  
             <span>${ price }</span>
