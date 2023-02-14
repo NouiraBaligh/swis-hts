@@ -27,9 +27,10 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
     props: {
       product,
     },
+   
+   
   }
 }
-
 const Product = ({ product }: ProductPageType) => {
   const [showBlock, setShowBlock] = useState('description');
 
