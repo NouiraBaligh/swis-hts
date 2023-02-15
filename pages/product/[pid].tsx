@@ -20,7 +20,7 @@ type ProductPageType = {
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const pid = query.pid;
-  const res = await fetch(`${server}/api/product/${pid}?t=${new Date().getTime()}`);
+const res = await fetch(`${server}/api/product/${pid}?t=${new Date().getTime()}`);
   const product = await res.json();
 
   return {
@@ -29,9 +29,9 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
     },
    
    
+    }
   }
-}
-const Product = ({ product }: ProductPageType) => {
+const Product = ({ product }: ProductPageType) => { 
   const [showBlock, setShowBlock] = useState('description');
 
   return (
