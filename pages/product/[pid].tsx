@@ -9,6 +9,7 @@ import Gallery from '../../components/product-single/gallery';
 import Content from '../../components/product-single/content';
 import Description from '../../components/product-single/description';
 import Reviews from '../../components/product-single/reviews';
+import { server } from '../../utils/server'; 
 
 // types
 import { ProductType } from 'types';
@@ -19,7 +20,7 @@ type ProductPageType = {
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const pid = query.pid;
-  const res = await fetch(`http://localhost:3000/api/product/${pid}`);
+  const res = await fetch(`${server}/api/product/${pid}`);
   const product = await res.json();
 
   return {
