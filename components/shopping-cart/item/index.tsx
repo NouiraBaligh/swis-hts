@@ -49,7 +49,7 @@ const ShoppingCart = ({ thumb, name, id, color, size, count, price }: ProductSto
           </div>
 
           <div className="cart-product__content">
-            {/* <h3>{name}</h3> */}
+            <h3>{name}</h3>
             <p>#{id}</p>
           </div>
         </div>

@@ -13,7 +13,7 @@ const CheckoutItems = () => {
             </div>
 
             <div className="checkout-item__data">
-              {/* <h3>{item.name}</h3> */}
+              <h3>{item.name}</h3>
               <span>#{item.id}</span>
             </div>
           </div>
