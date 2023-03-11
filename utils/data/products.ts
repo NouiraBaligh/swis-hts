@@ -2,11 +2,11 @@ export const products = [
   {
     id: '1',
     name: 'Create an Android/IOS mobile app in Flutter ',
-    price: 255.00,
+    price: 100.00,
     discount: 30,
     quantityAvailable: 2,
    
-    currentPrice: 255.00,
+    currentPrice: 100.00,
   
     images: [
       '/images/products/product-1.jpg',
@@ -61,10 +61,10 @@ export const products = [
   {
     id: '2',
     name: 'development of a mobile application (hybrid) with flutter',
-    price: 555.99,
+    price: 200,
     quantityAvailable: 2,
 
-    currentPrice: 555,
+    currentPrice: 200,
 
     images: [
       '/images/products/product-2.jpg',
@@ -119,10 +119,10 @@ export const products = [
   {
     id: '3',
     name: 'development of customs sections and pages in a Shopify theme',
-    price: 355,
+    price: 300,
     quantityAvailable: 2,
    
-    currentPrice: 355,
+    currentPrice: 300,
  
     images: [
       '/images/products/product-3.jpg',
@@ -177,10 +177,10 @@ export const products = [
   {
     id: '4',
     name: 'create a multi products Shopify store',
-    price: 655,
+    price: 400,
     quantityAvailable: 2,
     
-    currentPrice: 655,
+    currentPrice: 400,
     
     images: [
       '/images/products/product-4.jpg',
@@ -235,10 +235,10 @@ export const products = [
   {
     id: '5',
     name: 'Analyze data in Excel, google Sheets or Accesssss',
-    price: 755.00,
+    price: 500.00,
    
     category: 'T-shirt',
-    currentPrice: 755.00,
+    currentPrice: 500.00,
    
     images: [
       '/images/products/product-5.jpg',
@@ -293,8 +293,8 @@ export const products = [
   {
     id: '6',
     name: 'Create an Android & IOS ecommerce mobile application',
-    price: 455,
-   currentPrice: 455,
+    price: 600,
+   currentPrice: 600,
    images: [
       '/images/products/product-6.jpg',
     ],
@@ -348,8 +348,8 @@ export const products = [
   {
     id: '7',
     name: 'Create a devops session application ',
-    price: 955,
-   currentPrice: 955,
+    price: 700,
+   currentPrice: 700,
    images: [
       '/images/products/product-7.jpg',
     ],
@@ -403,8 +403,8 @@ export const products = [
   {
     id: '8',
     name: 'Create a scrum session for startups ',
-    price: 1100,
-   currentPrice: 1100,
+    price: 800,
+   currentPrice: 800,
    images: [
       '/images/products/product-8.jpg',
     ],
