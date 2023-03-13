@@ -6,7 +6,7 @@ export const products = [
     discount: 30,
     quantityAvailable: 2,
    
-    currentPrice: 100.00,
+    currentPrice: 1.00,
   
     images: [
       '/images/products/product-1.jpg',
