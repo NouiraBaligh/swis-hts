@@ -2,11 +2,11 @@ export const products = [
   {
     id: '1',
     name: 'Create an Android/IOS mobile app in Flutter ',
-    price:1,
+    price:107,
     discount: 30,
     quantityAvailable: 2,
    
-    currentPrice: 1,
+    currentPrice: 107,
   
     images: [
       '/images/products/product-1.jpg',
