@@ -90,7 +90,7 @@ const CheckoutPage = () => {
               <div className="block">
                 <h3 className="block__title">Payment method</h3>
                 <ul className="round-options round-options--three">
-                <PayPalScriptProvider options={{"client-id":"AZqoesjbE7XnmdZ_wQlmmFgxmwa7bNbGDS2YbmEjncjX0oMlOxCb-KpWBtLPZTLxQWbOA0M7AzoiWCmq"}}>
+                <PayPalScriptProvider options={{"client-id":"AbN54mIE1v0lH6Wm1WC2awm7CxhYVJhDBQfXMNllzDOVdD5HS_sEriErgxR1LcUcCqE0Y1hjrcJT47Ol"}}>
                 <PayPalButtons createOrder={(_data,actions)=>{
                   return actions.order.create({
                     purchase_units:[
