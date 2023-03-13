@@ -2,7 +2,7 @@ import Layout from '../../layouts/Main';
 import { useSelector } from 'react-redux';
 import CheckoutStatus from '../../components/checkout-status';
 import CheckoutItems from '../../components/checkout/items';
-// import { PayPalScriptProvider,PayPalButtons } from '@paypal/react-paypal-js';
+import { PayPalScriptProvider,PayPalButtons } from '@paypal/react-paypal-js';
 import { RootState } from 'store';
 
 const CheckoutPage = () => {
@@ -90,7 +90,7 @@ const CheckoutPage = () => {
               <div className="block">
                 <h3 className="block__title">Payment method</h3>
                 <ul className="round-options round-options--three">
-                {/* <PayPalScriptProvider options={{"client-id":"AbN54mIE1v0lH6Wm1WC2awm7CxhYVJhDBQfXMNllzDOVdD5HS_sEriErgxR1LcUcCqE0Y1hjrcJT47Ol"}}>
+                <PayPalScriptProvider options={{"client-id":"AbN54mIE1v0lH6Wm1WC2awm7CxhYVJhDBQfXMNllzDOVdD5HS_sEriErgxR1LcUcCqE0Y1hjrcJT47Ol"}}>
                 <PayPalButtons createOrder={(_data,actions)=>{
                   return actions.order.create({
                     purchase_units:[
@@ -103,7 +103,7 @@ const CheckoutPage = () => {
                 }}
               
                 ></PayPalButtons>
-                  </PayPalScriptProvider>  */}
+                  </PayPalScriptProvider> 
                 
                 </ul>
               </div>
